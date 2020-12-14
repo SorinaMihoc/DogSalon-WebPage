@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HappyDog.css">
+    <title>Dog grooming salon</title>
+    <script src="https://kit.fontawesome.com/1643024ccf.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><i style="font-size: 24px;" class='fas fa-dog'></i></li>
+            <li><a href="http://127.0.0.1:5500/HappyDog%20Home%20Page.html">HOME</a></li>
+            <li><a href="http://127.0.0.1:5500/HappyDog%20Prices%20Page.html">PRICES</a></li>
+            <li><a href="http://127.0.0.1:5500/HappyDog%20Photos%20Page.html">PHOTOS</a></li>
+            <li><a>CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="carousel">
+        <div class="mySlides">
+            <img src="https://www.frizerietunscoaforcaninsectorul4.ro/Animatii/Flash/5.jpg" alt="A pic with a dog">
+        </div>
+        <div class="mySlides">
+            <img src="https://animax.ro/wp/wp-content/uploads//2018/05/6-lucruri-de-stiut-cand-iti-speli-cainele.png"
+                alt="A pic with a dog">
+        </div>
+        <div class="mySlides">
+            <img src="https://mobilepet.ro/blog/wp-content/uploads/2016/08/dog-843800_1920-1078x556.jpg"
+                alt="A pic with a dog">
+        </div>
+        <div class="mySlides">
+            <img src="https://www.frizerietunscoaforcaninsectorul4.ro/Animatii/Flash/2.jpg" alt="A pic with a dog">
+        </div>
+        <div class="mySlides">
+            <img src="https://www.ziaruldevaslui.ro/wp-content/uploads/2020/01/caine-tuns.jpg" alt="A pic with a dog">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dots");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <div class="row">
+        <div class="column">
+            <img src="https://www.frizerietunscoaforcaninsectorul4.ro/Animatii/Flash/5.jpg" style="width: 100%;">
+            <img src="https://www.petgroomer.ro/uploads/servicii/tuns.jpg" style="width: 100%;">
+            <img src="https://www.ziprecruiter.com/blog/zrs-0005/blog/wp-content/uploads/2020/03/1041039448_Pet-Groomer.jpg"
+                style="width:100%">
+            <img src="https://www.blupet.ro/uploads/images/Gallery/inainte-dupa/tuns-caini-bichon.jpg"
+                style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="https://animax.ro/wp/wp-content/uploads//2018/05/6-lucruri-de-stiut-cand-iti-speli-cainele.png"
+                style="width: 100%;">
+            <img src="https://www.ziaruldevaslui.ro/wp-content/uploads/2020/01/caine-tuns.jpg" style="width: 100%;">
+            <img src="https://wta.ro/wp-content/uploads/2020/07/how-to-help-keep-your-dog-safe-at-the-groomer-amid-petsmart-deaths.jpg"
+                style="width: 100%;">
+            <img src="https://blog.scitraining.com/wp-content/uploads/2020/01/dog-groomer-salary.jpg"
+                style="width: 100%;">
+            <img src="https://cdn0.wideopenpets.com/wp-content/uploads/2017/01/AdobeStock_124991434-770x405.jpg"
+                style="width: 100%">
+        </div>
+        <div class="column">
+            <img src="https://mobilepet.ro/blog/wp-content/uploads/2016/08/dog-843800_1920-1078x556.jpg"
+                style="width: 100%;">
+            <img src="https://static.eva.ro/img/auto_resized/db/article/217/587/371081l-650x487-b-c22639e9.jpg"
+                style="width: 100%;">
+            <img src="https://lh3.googleusercontent.com/proxy/-eVEhil40pvCfppWDrAiCk7db-H_WhL9jAIq4P4RFdcfkqrPruD-B4RULwGzvtulkHvNGM9AN1NsGg9a5MzMB0l_x7zDJ5Q"
+                style="width: 100%;">
+            <img src="https://alpha-pet.ro/wp-content/uploads/2019/03/inainte-dupa-tuns-caini.jpeg"
+                style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="https://www.frizerietunscoaforcaninsectorul4.ro/Animatii/Flash/2.jpg" style="width: 100%;">
+            <img src="https://www.petgroomer.ro/uploads/images/GalleryThumbs/55-9.jpg" style="width: 100%;">
+            <img src="https://alphapet.ro/wp-content/uploads/2018/08/MAG-SPALAT.jpg" style="width: 100%;">
+            <img src="https://adevarul.ro/assets/adevarul.ro/MRImage/2019/06/24/5d109ada892c0bb0c6bcac37/646x404.jpg"
+                style="width: 100%;">
+        </div>
+    </div>
+</body>
+
+</html>
